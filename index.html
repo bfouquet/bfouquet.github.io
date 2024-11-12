@@ -22,77 +22,55 @@
         }
 
         /* Header Section */
-        .header {
-            text-align: center;
-            padding: 40px 20px;
+        .header-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
         }
-        .header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
+        
+        .header-image {
+            width: 40%;
+            max-width: 40%;
+        }
+        
+        .header-image img {
+            width: 100%;
+            border-radius: 8px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .header h1 {
+        
+        .about {
+            width: 55%;
+            padding-left: 2%;
+        }
+        
+        .about h1 {
             font-weight: 500;
             color: #222;
-        }
-        .header p {
-            color: #666;
-        }
-
-        /* Links Section */
-        .links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            padding: 10px 0 30px;
-        }
-        .links a {
-            width: 32px;
-            height: 32px;
-            display: inline-block;
-            background-color: #333;
-            border-radius: 50%;
             text-align: center;
-            line-height: 32px;
-            color: #fff;
-            text-decoration: none;
-            font-size: 14px;
+            margin: 0;
         }
-
-        /* Section Styles */
-        .section {
-            background-color: #fff;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
-        }
-        .section h2 {
-            font-size: 1.5em;
-            color: #333;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
-        .section p, .section li {
+        
+        .about p {
             color: #555;
             line-height: 1.6;
+            margin: 10px 0;
         }
-
-        /* Experience Table */
-        .experience-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
+        
+        .links {
+            text-align: center;
+            margin-top: 15px;
         }
-        .experience-table td, .experience-table th {
-            padding: 10px;
-            border-bottom: 1px solid #eee;
-        }
-        .experience-table td {
+        
+        .links a {
             color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -100,20 +78,35 @@
 
 <div class="container">
 
-    <!-- Header Section -->
-    <div class="header">
-        <img src="https://picsum.photos/200" alt="John Smith's Profile Photo">
-        <h1>John Smith</h1>
-        <p>Consultant Data Scientist | Specialized in Computer Vision, LLMs, and Web Development</p>
+    <!-- Header Section with Image and About Me -->
+    <div class="header-table">
+        
+        <!-- Profile Image -->
+        <div class="header-image">
+            <img src="https://picsum.photos/300/400" alt="John Smith's Profile Photo">
+        </div>
+        
+        <!-- About Me Section -->
+        <div class="about">
+            <h1>John Smith</h1>
+            <p>
+                I am a consultant data scientist with a strong focus on <a href="#">Computer Vision</a> and <a href="#">Large Language Models (LLMs)</a>. Currently, I work at <a href="#">Tech Innovators, Inc.</a>, where I lead projects in predictive analytics and model optimization. I specialize in developing solutions that bridge research and real-world impact, focusing on innovative applications in data science.
+            </p>
+            <p>
+                Recently, I co-authored a paper on <a href="#">Improving Vision Model Interpretability</a>, which explores novel methods to make complex models more accessible and interpretable in decision-making processes. My other research interests include AI-driven climate resilience, advanced NLP solutions, and AI ethics.
+            </p>
+            <p>
+                Feel free to get in touch to discuss potential projects, research, or collaboration opportunities.
+            </p>
+            <div class="links">
+                <a href="mailto:johnsmith@example.com">Email</a> / 
+                <a href="https://github.com/johnsmith">GitHub</a> / 
+                <a href="https://www.linkedin.com/in/johnsmith">LinkedIn</a>
+            </div>
+        </div>    
     </div>
 
-    <!-- Links Section -->
-    <div class="links">
-        <a href="https://github.com/johnsmith" title="GitHub">G</a>
-        <a href="https://www.linkedin.com/in/johnsmith" title="LinkedIn">L</a>
-        <a href="https://bento.me/johnsmith" title="Bento">B</a>
-    </div>
-
+    
     <!-- Introduction Section -->
     <div class="section">
         <h2>About Me</h2>
