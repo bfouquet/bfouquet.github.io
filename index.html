@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Smith - Consultant Data Scientist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .tab-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .tab {
+            background-color: #ddd;
+            border: 1px solid #ccc;
+            padding: 10px;
+            cursor: pointer;
+            margin-right: 5px;
+            text-align: center;
+        }
+        .tab.active {
+            background-color: #333;
+            color: #fff;
+        }
+        .content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Benjamin Fouquet</h1>
+    <p>Consultant Data Scientist | Specialization in Computer Vision, LLMs, and Web Development</p>
+</div>
+
+<div class="tab-container">
+    <div class="tab active" onclick="openTab(event, 'presentation')">Presentation</div>
+    <div class="tab" onclick="openTab(event, 'experience')">Experience</div>
+    <div class="tab" onclick="openTab(event, 'interests')">Interests</div>
+</div>
+
+<div id="presentation" class="content active">
+    <h2>Welcome!</h2>
+    <p>I’m Benjamin Fouquet a Consultant Data Scientist with a deep specialization in Computer Vision, Large Language Models, and Web Development. I’ve had the pleasure of building data-driven systems that improve accuracy, efficiency, and customer engagement across various industries.</p>
+</div>
+
+<div id="experience" class="content">
+    <h2>Professional Experience</h2>
+    <table border="0" cellspacing="10" cellpadding="10">
+        <tr>
+            <td><strong>GraphCast, Inc.</strong></td>
+            <td>Data Scientist - Climate Prediction</td>
+            <td>Jan 2023 - Present</td>
+        </tr>
+        <tr>
+            <td colspan="3">Using GraphCast and deep learning to predict natural disasters with a focus on typhoon predictions on the East Coast of the US, enabling fair insurance for people in danger zones. Skills: Python, TensorFlow, Graph Neural Networks.</td>
+        </tr>
+        <tr>
+            <td><strong>AI Vision Solutions</strong></td>
+            <td>Lead Computer Vision Scientist</td>
+            <td>Feb 2021 - Dec 2022</td>
+        </tr>
+        <tr>
+            <td colspan="3">Developed computer vision models for quality control in automated manufacturing, increasing defect detection by 20%. Skills: OpenCV, PyTorch, Convolutional Neural Networks, Docker.</td>
+        </tr>
+        <tr>
+            <td><strong>LanguageTech</strong></td>
+            <td>Consultant - NLP & LLMs</td>
+            <td>Jun 2019 - Jan 2021</td>
+        </tr>
+        <tr>
+            <td colspan="3">Created an NLP-driven chatbot, increasing customer engagement by 30% for a Fortune 500 client. Specialized in GPT-based LLMs and NLP tuning. Skills: GPT-3, NLTK, AWS.</td>
+        </tr>
+    </table>
+</div>
+
+<div id="interests" class="content">
+    <h2>Interests</h2>
+    <p>I’m passionate about the intersection of state-of-the-art technology and real-world applications:</p>
+    <ul>
+        <li><strong>Public Interest:</strong> Helping society prepare for natural disasters through predictive technologies.</li>
+        <li><strong>Career Goal:</strong> Positioning myself as an expert in climate prediction technology, as it will be crucial for future resilience and adaptation.</li>
+        <li><strong>Research-Driven:</strong> Pioneering the boundary between academic research and scalable, business-ready applications in AI and machine learning.</li>
+    </ul>
+</div>
+
+<script>
+    function openTab(event, tabId) {
+        let tabs = document.getElementsByClassName("tab");
+        let contents = document.getElementsByClassName("content");
+
+        for (let i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove("active");
+            contents[i].classList.remove("active");
+        }
+
+        document.getElementById(tabId).classList.add("active");
+        event.currentTarget.classList.add("active");
+    }
+</script>
+
+</body>
+</html>
