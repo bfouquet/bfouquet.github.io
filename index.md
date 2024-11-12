@@ -4,7 +4,7 @@ title: John Smith - Consultant Data Scientist
 ---
 
 # Benjamin Fouquet
-![Benjamin's Picture](assets/john-smith.jpg)
+![Benjamin's Picture](assets/bfouquet.jpg)
 
 ## 👋 Welcome to My Page
 
